@@ -8,7 +8,8 @@ function App() {
 
  useEffect(() => {
   fetch("/api/deploy")
-   .then((response) => response.text())
+   .then((response) => 
+	   response.text())
    .then((msg) => {
     setMsg(msg);
    });
