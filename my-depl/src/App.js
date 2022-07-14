@@ -1,4 +1,3 @@
-// frontend
 import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
@@ -7,9 +6,8 @@ function App() {
  const [msg, setMsg] = useState("");
 
  useEffect(() => {
-  fetch("/api/deploy")
-   .then((response) => 
-	   response.text())
+  fetch("api/deploy")
+   .then((response) => response.text())
    .then((msg) => {
     setMsg(msg);
    });
@@ -37,3 +35,4 @@ function App() {
 }
 
 export default App;
+
