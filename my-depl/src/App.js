@@ -6,7 +6,7 @@ function App() {
  const [msg, setMsg] = useState("");
 
  useEffect(() => {
-  fetch("api/deploy")
+  fetch("/api/deploy")
    .then((response) => response.text())
    .then((msg) => {
     setMsg(msg);
